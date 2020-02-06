@@ -5,13 +5,6 @@ import chapter2.applePredicate.AppleHeavyWeightPredicate;
 
 import java.util.ArrayList;
 import java.util.List;
-/*
-* 行为参数化，就是一个方法接收多个不同的行为作为参数，并在内部使用它们，完成不同行为的能力。
-* 行为参数化可让代码更好地适应不断变化的要求，减轻未来的工作量。
-* 传递代码，就是就新行为作为参数传递给方法。但在java8之前实现起来很啰嗦。为接口中声明许多只用一次的实体类而造成的啰嗦代码，在java8
-* 之前可以用匿名类来减少。
-* java API包含很多可以用不同行为进行参数化的方法，包括排序、线程和GUI处理。
-* */
 public class FilterApples {
     //1、java8 之前应对此类需求的代码写法 筛选苹果的颜色
     public static List<Apple> filterGreenApple(List<Apple> inventory){
